@@ -6,13 +6,13 @@ layout: home
 title: Zaiyuan Chen
 ---
 
-I'm a PhD student of [Shanghai Center for Mathematical Sciences, Fudan University](https://scms.fudan.edu.cn/), supervised by Prof. Zhiyuan Li.
+I'm a PhD student of [Shanghai Center for Mathematical Sciences, Fudan University](https://scms.fudan.edu.cn/), supervised by Prof. [Zhiyuan Li](https://faculty.fudan.edu.cn/zhiyuanli/zh_CN/index.htm).
 
 My main interest is algebraic geometry.
 
-Email: zaiyuanchen16 # fudan (replace # by @, and add edu.cn)
+**Email:** zaiyuanchen16 # fudan (replace # by @, and add edu.cn)
 
-Address: Room 404, Shanghai Center for Mathematical Sciences, 2005 Songhu Road, Shanghai, China
+**Address:** Room 404, Shanghai Center for Mathematical Sciences, 2005 Songhu Road, Shanghai, China
 
 ---
 
