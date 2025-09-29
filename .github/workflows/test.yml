@@ -1,0 +1,22 @@
+name: Zola on Github Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Publish Site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3.0.0
+      - name: Build and Deploy
+        # v0.17.2 では git config --global --add safe.directory '*' に失敗する時があった
+        # 最新版の参照する形式に変更
+        # https://github.com/shalzz/zola-deploy-action/issues/53#issuecomment-1409707948
+        uses: shalzz/zola-deploy-action@master
+        env:
+          # https://docs.github.com/ja/actions/security-guides/automatic-token-authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

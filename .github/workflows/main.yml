@@ -1,0 +1,38 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main'
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: build only
+        uses: shalzz/zola-deploy-action@v0.20.0
+        env:
+          BUILD_ONLY: true
+          BUILD_FLAGS: --drafts
+
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: build and deploy
+        uses: shalzz/zola-deploy-action@v0.20.0
+        env:
+          PAGES_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
