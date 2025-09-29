@@ -1,0 +1,97 @@
+# The URL the site will be built for
+base_url = "https://zaiychen.github.io"
+theme = "linkita"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# The default language.
+default_language = "en"
+
+# The default author for pages.
+# See "extra.profiles".
+author = "Zaiyuan Chen"
+
+# The site title.
+# Will be in all page titles.
+title = ""
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+# Enable KaTeX math formula support globally.
+# Default value: false
+math = false
+
+# Enable Mermaid support globally.
+# Default value: false
+mermaid = false
+
+# Enable comments globally.
+# Default value: false
+comment = false
+
+# Title separator.
+title_separator = " | "
+
+# The top menu.
+# See "extra.menus".
+header_menu_name = "menu_name"
+
+# You can reorder the strings, remove them, replace them.
+# For example, you can replace "site_title" with "home_button".
+# Default value: ["site_title", "theme_button", "search_button", "translations_button"]
+# header_buttons = []
+
+# Valid "when" values:
+#  "date", "date_updated", "reading_time", "word_count", "authors", "tags", "".
+# The "prepend" and "append" are used when the value of "when" is defined for the page.
+# e.g. [{when="", prepend="Page Info: "},{when="date",prepend="Published on "},{when="authors",prepend="By "}]
+# page_info = [{ when="date" }, { when="date_updated", prepend="(", append=")" }, { when="reading_time" }]
+# page_info_on_paginator = [{ when="date" }, { when="reading_time" }]
+
+# Enable table of contents on all pages.
+# If not set, toc is enabled only on posts.
+# If set to false, toc is disabled on all pages.
+# Type: boolean or object
+# toc = true
+
+[extra.style]
+# The custom background color.
+bg_color = "#f4f4f5"
+# The custom background color in dark mode.
+bg_dark_color = "#18181b"
+
+# Enable header blur.
+header_blur = false
+
+# The custom header color, only available
+# when "header_blur" is false.
+header_color = "#e4e4e7"
+# The custom header color in dark mode, only available
+# when "header_blur" is false.
+header_dark_color = "#27272a"
+
+[extra.menus]
+menu_name = [
+  { url = "$BASE_URL/links/", name = "Links" },
+  { url = "$BASE_URL/else/", name = "Miscellaneous" },
+]
+
+[extra.footer]
+# Replace with the correct year.
+# Default value: the current year
+since = 2023
+
+# Replace with the URL of the license you want.
+# No default value. Supports "$BASE_URL".
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+
+# Replace "Your Name" with your name and "CC BY-SA 4.0" with the name of the license you want.
+copyright = "&copy; $YEAR Zaiyuan Chen &vert; [CC BY-SA 4.0]($LICENSE_URL)"
