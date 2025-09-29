@@ -1,22 +1,38 @@
-name: Zola on Github Pages
+name: Publish
 
 on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   build:
-    name: Publish Site
     runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main'
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v3.0.0
-      - name: Build and Deploy
-        # v0.17.2 では git config --global --add safe.directory '*' に失敗する時があった
-        # 最新版の参照する形式に変更
-        # https://github.com/shalzz/zola-deploy-action/issues/53#issuecomment-1409707948
-        uses: shalzz/zola-deploy-action@master
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: build only
+        uses: shalzz/zola-deploy-action@v0.20.0
         env:
-          # https://docs.github.com/ja/actions/security-guides/automatic-token-authentication
+          BUILD_ONLY: true
+          BUILD_FLAGS: --drafts
+
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: build and deploy
+        uses: shalzz/zola-deploy-action@v0.20.0
+        env:
+          PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
