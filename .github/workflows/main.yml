@@ -33,15 +33,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Cache Zola build
-        uses: actions/cache@v3
-        with:
-          path: |
-            .zola
-          key: ${{ runner.os }}-zola-${{ hashFiles('**/*.html', '**/*.toml') }}
-          restore-keys: |
-            ${{ runner.os }}-zola-
-
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
