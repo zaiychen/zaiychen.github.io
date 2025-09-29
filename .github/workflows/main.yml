@@ -11,17 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/main'
     steps:
-      - name: Checkout
+      - name: Checkout with submodules
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Clone theme from Codeberg
-        run: |
-          git clone https://codeberg.org/salif/linkita.git themes/linkita
-
-      - name: build only
+      - name: Build only
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
           BUILD_ONLY: true
@@ -31,13 +27,15 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: checkout
+      - name: Checkout with submodules
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
+          fetch-depth: 0
 
-      - name: build and deploy
+      - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
           PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
