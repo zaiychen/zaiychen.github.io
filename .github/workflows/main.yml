@@ -19,7 +19,7 @@ jobs:
 
       - name: Pull from Codeberg
         run: |
-          git clone https://codeberg.org/salif/linkita.git external-repo
+          git clone https://codeberg.org/salif/linkita.git themes/linkita
 
       - name: build only
         uses: shalzz/zola-deploy-action@v0.20.0
