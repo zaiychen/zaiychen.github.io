@@ -17,6 +17,10 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Clone theme from Codeberg
+        run: |
+          git clone https://codeberg.org/salif/linkita.git themes/linkita
+
       - name: build only
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
