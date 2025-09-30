@@ -2,6 +2,7 @@
 title = "Seminars"
 template = "archive.html"
 transparent = true
+sort_by = "date"
 [extra]
 date_format = "%y-%m-%d"
 +++

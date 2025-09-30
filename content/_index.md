@@ -10,7 +10,7 @@ My main interest is algebraic geometry, especially topics related to hyperkähle
 
 **Address:** Room 404, Shanghai Center for Mathematical Sciences, 2005 Songhu Road, Shanghai, China
 
----
+<br><br>
 
 ### Preprints
 
@@ -26,13 +26,14 @@ My main interest is algebraic geometry, especially topics related to hyperkähle
 
 - 2023 Fall    Abstract Algebra
 
-- 2022 Fall    Abstract Algebra    [handout concerning the axiom of choice](/Notes/axiom_of_choice.pdf)
+- 2022 Fall    Abstract Algebra [handout concerning the axiom of choice](/Notes/axiom_of_choice.pdf)
 
 - 2021 Fall    Abstract Algebra
 
 - 2020 Fall    Functional Analysis
 
----
+<br><br>
+
 Last Update: Sept. 30, 2025
 
 Revamped using Zola on Sept. 29, 2025
