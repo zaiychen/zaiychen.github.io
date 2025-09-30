@@ -1,0 +1,4 @@
+{% set image_url = get_url(path=path) %}
+<p style="text-align: center;">
+    <img src="{{ image_url }}" alt="{{ alt | default(value='') }}">
+</p>
