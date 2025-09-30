@@ -55,12 +55,14 @@ header_menu_name = "menu_name"
 # e.g. [{when="", prepend="Page Info: "},{when="date",prepend="Published on "},{when="authors",prepend="By "}]
 # page_info = [{ when="date" }, { when="date_updated", prepend="(", append=")" }, { when="reading_time" }]
 # page_info_on_paginator = [{ when="date" }, { when="reading_time" }]
+page_info = [{ when="date" }, { when="date_updated", prepend = "Updated on " }]
 
 # Enable table of contents on all pages.
 # If not set, toc is enabled only on posts.
 # If set to false, toc is disabled on all pages.
 # Type: boolean or object
 # toc = true
+toc = false
 
 [extra.style]
 # The custom background color.
@@ -69,18 +71,18 @@ bg_color = "#f4f4f5"
 bg_dark_color = "#18181b"
 
 # Enable header blur.
-header_blur = false
+header_blur = true
 
 # The custom header color, only available
 # when "header_blur" is false.
-header_color = "#e4e4e7"
+# header_color = "#e4e4e7"
 # The custom header color in dark mode, only available
 # when "header_blur" is false.
-header_dark_color = "#27272a"
+# header_dark_color = "#27272a"
 
 [extra.menus]
 menu_name = [
-  { url = "$BASE_URL/links/", name = "Links" },
+  { url = "$BASE_URL/seminars/", name = "Seminars" },
   { url = "$BASE_URL/else/", name = "Miscellaneous" },
 ]
 
