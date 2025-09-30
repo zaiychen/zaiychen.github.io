@@ -83,7 +83,7 @@ header_blur = true
 [extra.menus]
 menu_name = [
   { url = "$BASE_URL/seminars/", name = "Seminars" },
-  { url = "$BASE_URL/else/", name = "Miscellaneous" },
+  { url = "$BASE_URL/miscellaneous/", name = "Miscellaneous" },
 ]
 
 [extra.footer]
