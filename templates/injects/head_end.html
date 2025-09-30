@@ -1,0 +1,22 @@
+<script>
+  // Auto-detect system dark mode preference
+  (function() {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Set initial theme based on system preference
+    if (mediaQuery.matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    // Listen for changes in system preference
+    mediaQuery.addEventListener('change', (e) => {
+      if (e.matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    });
+  })();
+</script>
