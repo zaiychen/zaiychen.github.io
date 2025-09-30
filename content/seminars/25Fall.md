@@ -4,12 +4,12 @@ date = 2025-09-09
 updated = 2025-09-30
 +++
 
-### Boundedness for abelian fibrations
+#### Boundedness for abelian fibrations
 
 references:
 - [Boundedness of some fibered K-trivial varieties](https://arxiv.org/abs/2507.00973)
 
-### Integral Hodge conjecture for abelian varieties
+#### Integral Hodge conjecture for abelian varieties
 
 references:
 - [Combinatorics and Hodge theory of degenerations of abelian varieties: A survey of the Mumford construction](https://arxiv.org/abs/2507.15695)
