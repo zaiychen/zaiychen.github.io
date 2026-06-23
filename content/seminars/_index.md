@@ -7,4 +7,4 @@ sort_by = "date"
 date_format = "%y-%m-%d"
 +++
 
-Mainly the goals and references for the seminars. Probably no notes.
+Records of the goals and references for the routine seminars. Probably no notes.

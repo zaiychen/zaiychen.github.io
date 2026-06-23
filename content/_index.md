@@ -10,9 +10,11 @@ My main interest is algebraic geometry, especially topics related to hyperkähle
 
 **Address:** Room 404, Shanghai Center for Mathematical Sciences, 2005 Songhu Road, Shanghai, China
 
-<br><br>
+<div class="section">
 
 ### Preprints
+
+- [Bloch's conjecture for equivalences between twisted abelian surfaces and applications](https://arxiv.org/abs/2606.22323) (with Zhiyuan Li, Ruxuan Zhang)
 
 - [Filtrations on the derived category of twisted K3 surfaces](https://arxiv.org/abs/2402.13793) (with Zhiyuan Li, Ruxuan Zhang, Xun Zhang)
 
@@ -32,8 +34,10 @@ My main interest is algebraic geometry, especially topics related to hyperkähle
 
 - 2020 Fall    Functional Analysis
 
+</div>
+
 <br><br>
 
-Last Update: Sept. 30, 2025
+Last Update: June 23, 2026
 
 Revamped using Zola on Sept. 29, 2025
